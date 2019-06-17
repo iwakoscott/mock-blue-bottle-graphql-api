@@ -1,4 +1,6 @@
-const schema = `
+const { ApolloServer } = require('apollo-server');
+
+const typeDefs = `
   interface Coffee {
     id: ID!
     name: String!
@@ -33,3 +35,11 @@ const schema = `
     country: Country!
   }
 `;
+
+const server = new ApolloServer({
+  typeDefs
+});
+
+server
+  .listen()
+  .then(({ url }) => console.log(`Listening for ☕️ orders on ${url}`));
