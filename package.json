@@ -1,0 +1,15 @@
+{
+  "name": "blue-bottle-blog-post",
+  "version": "1.0.0",
+  "description": "",
+  "main": "typeDefs.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "graphql-tag": "^2.10.1"
+  }
+}
