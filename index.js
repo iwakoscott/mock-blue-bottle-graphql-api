@@ -2,7 +2,7 @@ const { ApolloServer } = require('apollo-server');
 const faker = require('faker');
 
 function getRandomPrice() {
-  const randomPrice = Number(faker.finance.amount(0, 22, 2));
+  const randomPrice = Number(faker.finance.amount(12, 22, 2));
   return Math.round(randomPrice * 10) / 10;
 }
 
@@ -42,7 +42,7 @@ const typeDefs = `
   }
 
   type Query {
-    allCoffees: [Coffee!]!
+    allCoffee: [Coffee!]!
     allSingleOrigin: [SingleOrigin!]!
     allBlends: [Blend!]!
   }
@@ -77,13 +77,20 @@ const mocks = {
   })
 };
 
+const resolvers = {
+  Coffee: {
+    __resolveType: ({ countries }) => (countries ? 'Blend' : 'SingleOrigin')
+  }
+};
+
 const server = new ApolloServer({
   typeDefs,
-  mocks
+  mocks,
+  resolvers
 });
 
 server
-  .listen()
+  .listen(4001)
   .then(({ url }) =>
     console.log(`Listening for coffee orders on ${url}... ☕️`)
   );
