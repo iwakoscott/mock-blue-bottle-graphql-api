@@ -13,5 +13,8 @@
     "apollo-server": "^2.6.2",
     "graphql": "^14.3.1",
     "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "faker": "^4.1.0"
   }
 }
