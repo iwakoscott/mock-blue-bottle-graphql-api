@@ -9,4 +9,17 @@ const schema = gql`
     unitWeight: Float!
     imageURL: String!
   }
+
+  type Country {
+    id: ID!
+    name: String!
+  }
+
+  type Blend implements Coffee {
+    countries: [Country!]!
+  }
+
+  type SingleOrigin implements Coffee {
+    country: Country!
+  }
 `;
