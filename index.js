@@ -42,4 +42,6 @@ const server = new ApolloServer({
 
 server
   .listen()
-  .then(({ url }) => console.log(`Listening for ☕️ orders on ${url}`));
+  .then(({ url }) =>
+    console.log(`Listening for coffee orders on ${url}... ☕️`)
+  );
