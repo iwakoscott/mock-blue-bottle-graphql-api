@@ -1,6 +1,4 @@
-import gql from 'graphql-tag';
-
-const schema = gql`
+const schema = `
   interface Coffee {
     id: ID!
     name: String!
