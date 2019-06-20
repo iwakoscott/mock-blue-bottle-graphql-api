@@ -81,3 +81,9 @@ const server = new ApolloServer({
   typeDefs,
   mocks
 });
+
+server
+  .listen(4001)
+  .then(({ url }) =>
+    console.log(`Listening for coffee orders on ${url}... ☕️`)
+  );
