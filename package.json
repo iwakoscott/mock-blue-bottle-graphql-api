@@ -2,14 +2,16 @@
   "name": "blue-bottle-blog-post",
   "version": "1.0.0",
   "description": "",
-  "main": "typeDefs.js",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon . -e graphql,js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "graphql-tag": "^2.10.1"
+    "apollo-server": "^2.6.3",
+    "graphql": "^14.3.1",
+    "nodemon": "^1.19.1"
   }
 }
