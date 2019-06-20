@@ -48,6 +48,7 @@ const typeDefs = `
     allBlends: [Blend!]!
   }
 `;
+
 const mocks = {
   Blend: () => ({
     id: faker.random.number(),
@@ -77,9 +78,16 @@ const mocks = {
   })
 };
 
+const resolvers = {
+  Coffee: {
+    __resolveType: coffee => (coffee.countries ? 'Blend' : 'SingleOrigin')
+  }
+};
+
 const server = new ApolloServer({
   typeDefs,
-  mocks
+  mocks,
+  resolvers
 });
 
 server
