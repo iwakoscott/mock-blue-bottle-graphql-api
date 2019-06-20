@@ -1,4 +1,5 @@
 const { ApolloServer } = require('apollo-server');
+
 const faker = require('faker');
 
 function getRandomPrice() {
@@ -79,7 +80,7 @@ const mocks = {
 
 const resolvers = {
   Coffee: {
-    __resolveType: ({ countries }) => (countries ? 'Blend' : 'SingleOrigin')
+    __resolveType: coffee => (coffee.countries ? 'Blend' : 'SingleOrigin')
   }
 };
 
