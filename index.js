@@ -41,3 +41,7 @@ const typeDefs = `
     allBlends: [Blend!]!
   }
 `;
+
+const server = new ApolloServer({
+  typeDefs
+});
