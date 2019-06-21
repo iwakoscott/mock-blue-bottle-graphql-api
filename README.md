@@ -21,4 +21,4 @@ in your terminal.
 
 2. `cd mock-blue-bottle-graphql-api`
 3. run `npm install` to download dependencies.
-4. run `npm run start` to start the server on `http://localhost:4001`
+4. run `npm run start` to start the server on `http://localhost:4001` (This is after we've sucessfully set up the server of course)
