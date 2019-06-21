@@ -4,10 +4,10 @@
 
 ## Table of Contents
 
-1. [Start Here](https://github.com/iwakoscott/mock-blue-bottle-graphql-api/tree/START)
+1. 👉[Start Here](https://github.com/iwakoscott/mock-blue-bottle-graphql-api/tree/START) 👈
 2. [Adding mock resolvers](https://github.com/iwakoscott/mock-blue-bottle-graphql-api/tree/add-mock-resolvers)
 3. [Fixing the \_\_resolveType warning](https://github.com/iwakoscott/mock-blue-bottle-graphql-api/tree/fix-warnings)
-4. [Finished Version](https://github.com/iwakoscott/mock-blue-bottle-graphql-api/tree/master)
+4. [Finished Version](https://github.com/iwakoscott/mock-blue-bottle-graphql-api/tree/FINISH)
 
 ## Getting Started
 
